@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+/* Подключаем шрифт Michroma */
+body {
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+    font-family: Michroma, serif;
+    /* serif -альтернативный шрифт */
+}
+
+.nav-link {
+    color: rgb(83, 161, 161);
+}
+
+.navbar-nav .nav-link.active {
+    color: aqua;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(83, 161, 161);
+    /* Цвет иконки с тремя полосками */
+}
+
+.sidebar {
+    color: aqua;
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+}
+
+.card {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+    color: aqua;
+}
+
+.card a, 
+footer a,
+section a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.slide-text, 
+.footer-text {
+    color: aqua;
+    margin: auto auto;
+}
+
+footer,
+.btn-outline-primary {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+/* Анимация значка */
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+    /* Убираем индикатор на каком слайде находимся на мобильных устройствах */
+}
+
